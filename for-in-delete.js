@@ -40,7 +40,12 @@
 */
 
 function showValues( obj ) {
-  //Code Here
+  let string = ''
+ for(let key in obj){
+  string += obj[key]
+
+ } //Code Here
+return string
 }
 
 
@@ -53,7 +58,14 @@ function showValues( obj ) {
   Return the updated object.
 */
 
-//Code Here
+function greaterThan10(obj){
+  for(let key in obj){
+    if(obj[key] > 10){
+      obj[key] = 0
+    }
+  }
+  return obj 
+}
 
 
 
@@ -158,5 +170,6 @@ var deleteTheBigNumbers = {
 */
 
 //Code Here
+
 
 
